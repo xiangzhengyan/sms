@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.minglemass.common</groupId>
+	<artifactId>util-sms</artifactId>
+	<version>0.1</version>
+
+	<properties>
+		<project.source.version>1.8</project.source.version>
+		<project.target.version>1.8</project.target.version>
+		<project.encoding>UTF-8</project.encoding>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>corp</id>
+			<url>http://125.208.30.129/repository</url>
+		</repository>
+
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<encoding>${project.encoding}</encoding>
+					<source>${project.source.version}</source>
+					<target>${project.target.version}</target>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.alibaba.api</groupId>
+			<artifactId>taobao-sdk-java-auto</artifactId>
+			<version>20160607</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.0.4</version>
+		</dependency>
+	</dependencies>
+</project>
